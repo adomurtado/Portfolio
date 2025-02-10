@@ -5,114 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 </head>
-<body class="bg-slate-800 text-gray-900">
+<style>
+    html {
+    scroll-behavior: smooth;
+}
 
-    <!-- Halaman Utama (Home) -->
-    <section id="home" class="min-h-screen flex items-center justify-center bg-[url('https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg')] bg-cover bg-center">
-        <div class="text-center bg-black bg-opacity-50 p-4 rounded-lg">
-            <h1 class="text-4xl font-bold text-slate-300">Hi, I’m Ado Murtado. I build websites that solve real problems.</h1>
-            <img src="https://avatars.githubusercontent.com/u/181746074?v=4" alt="Your Photo" class="mt-4 rounded-full w-32 h-32 mx-auto">
+</style>
+<body class="bg-black text-white w-full h-64 bg-gradient-to-r from-slate-900/90 to-sky-900/10">
+    <header class="flex justify-between items-center p-6">
+        <div class="text-3xl font-bold">
+         <span class="text-white">
+            HIP
+         </span>
+         <span class="text-yellow-500">
+          HOP
+         </span>
         </div>
-    </section>    
+        <nav class="space-x-6 text-sm">
+         <a class="hover:text-yellow-500" href="#">
+          HOME
+         </a>
+         <a class="hover:text-yellow-500" href="#">
+          ABOUT
+         </a>
+         <a class="hover:text-yellow-500" href="#">
+          SERVICES
+         </a>
+         <a class="hover:text-yellow-500" href="#">
+          PORTFOLIO
+         </a>
+         <a class="hover:text-yellow-500" href="#">
+          TESTIMONIAL
+         </a>
+         <a class="hover:text-yellow-500" href="#">
+          CONTACT
+         </a>
+        </nav>
+    </header>
 
-    <!-- Tentang Saya (About) -->
-    <section id="about" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4 text-slate-300">About Me</h2>
-            <p class="mb-4 text-slate-500">Tell us about your background!</p>
-            <p class="mb-4 text-slate-400">A passionate web developer actively learning and working on projects using Laravel, HTML, CSS,  Tailwind CSS, JavaScript, PHP, and MySQL. Currently focused on building digital wedding invitations, campus websites, and form integrations with Google Sheets. Enthusiastic about exploring new technologies such as React.js, Node.js, and PostgreSQL.
+    <main class="ml-20 flex flex-col md:flex-row items-center justify-center min-h-screen p-6">
 
-                <br>"Code is like humor. When you have to explain it, it’s bad." – Cory House</br>
-                
-                🎨 Design Tools: Prototypes and mockups created in Figma to ensure clean, user-friendly interfaces.</p>
-            <p class="text-slate-500">From the tutorial we learned, that every path given is not all our way</p>
+        <div class="text-center md:text-left md:w-1/2 space-y-6">
+         <h2 class="text-xl">
+          Hello There!
+         </h2>
+         <h1 class="text-5xl font-bold">
+          I'M
+          <span class="text-yellow-500">
+           A WEB DEVELOVER
+          </span>
+         </h1>
+         <p class="text-gray-400">
+             Junior Laravel Developer passionate about building efficient and scalable web applications.         </p>
+         <div class="space-x-4">
+          <a class="inline-block bg-transparent border-2 border-white py-2 px-4 rounded-full hover:bg-white hover:text-black transition" href="#projects">
+           <i class="fas fa-user">
+           </i>
+           ABOUT ME
+          </a>
+          <a class="inline-block bg-transparent border-2 border-white py-2 px-4 rounded-full hover:bg-white hover:text-black transition" href="adomurtado1@gmail.com">
+           <i class="fas fa-envelope">
+           </i>
+           CONTACT ME
+          </a>
+         </div>
         </div>
-    </section>
-
-    <!-- Proyek (Projects) -->
-    <section id="projects" class="py-16 bg-gray-400 rounded-lg">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4 text-slate-300">Project</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Contoh Proyek -->
-                <div class="bg-slate-300 p-4 rounded-lg shadow">
-                    <img src="ss.png" alt="Project Screenshot" class="rounded mb-4">
-                    <h3 class="text-2xl font-bold mb-2 text-slate-600">Portfolio Website</h3>
-                    <p class="mb-2">Pembuatan web kampus dengan fiture databases.</p>
-                    <p class="mb-2">Teknologi yang digunakan: HTML, CSS, JavaScript,PHP,Laravel.</p>
-                    <a href="https://github.com/ratihsttc/Kelompok-1/tree/feature/laravel" class="text-blue-500">Lihat di GitHub</a>
-                </div>
-                <div class="bg-slate-300 p-4 rounded-lg shadow">
-                    <img src="dbs.png" alt="Project Screenshot" class="rounded mb-4">
-                    <h3 class="text-2xl font-bold mb-2 text-slate-600">Portfolio Website</h3>
-                    <p class="mb-2">Pembuatan web kampus dengan fiture databases.</p>
-                    <p class="mb-2">Teknologi yang digunakan: HTML, CSS, JavaScript,PHP,Laravel.</p>
-                    <a href="https://github.com/ratihsttc/Kelompok-1/tree/feature/laravel" class="text-blue-500">Lihat di GitHub</a>
-                </div>
-                <!-- Tambahkan proyek lainnya di sini -->
+        <div class="ml-20 md:w-1/2 mt-6 md:mt-0">
+         <img alt="A thoughtful man in a grey sweater with a hand on his chin" class="brightness-50 rounded-full " height="500" src="IMG_20230101_180453_109.jpg" width="500"/>
+        </div>
+        <a href="#projects">
+            <div class="left-20 absolute bottom-10 hover:text-blue-500 cursor-pointer">
+                <i class="fas fa-chevron-down text-2xl"></i>
             </div>
-        </div>
-    </section>
-
-    <!-- Keahlian (Skills) -->
-    <section id="skills" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4 text-slate-300">Skill</h2>
+        </a>
+    </main>
+    <section id="projects" class="py-16 from-slate-900/90 to-sky-900/10 rounded-lg">
+        <div class="container mx-auto px-4 text-gray-300">
+            <h2 class="text-2xl font-bold mb-4 text-slate-300">Skill</h2>
             <div class="flex flex-wrap">
-                <span class="bg-gray-300 text-gray-800 py-2 px-4 rounded-full mr-2 mb-2">HTML</span>
-                <span class="bg-gray-300 text-gray-800 py-2 px-4 rounded-full mr-2 mb-2">CSS</span>
-                <span class="bg-gray-300 text-gray-800 py-2 px-4 rounded-full mr-2 mb-2">JavaScript</span>
-                <span class="bg-gray-300 text-gray-800 py-2 px-4 rounded-full mr-2 mb-2">PHP</span>
-                <span class="bg-gray-300 text-gray-800 py-2 px-4 rounded-full mr-2 mb-2">PostgreSQL</span>
-                <span class="bg-gray-300 text-gray-800 py-2 px-4 rounded-full mr-2 mb-2">Laravel</span>
+                <span class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">Laravel</span>
+                <span class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">Docker</span>
+                <span class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">tailwindcss</span>
+                <span class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">SQL</span>
+                <span class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">Git</span>
                 <!-- Tambahkan keahlian lainnya di sini -->
             </div>
         </div>
-    </section>
+        <div class="container mx-auto px-4 mb-10">
+            <p class="text-1xl  mb-4 text-slate-300">PROJECTS</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+                <!-- Loop untuk Setiap Proyek -->
+                <div class="bg-sky-500/10 p-5 rounded-lg shadow">
+                    <div class="relative w-full overflow-hidden rounded-lg shadow-lg mb-4">
+                        <div class="flex transition-transform duration-700 ease-in-out slider" data-index="0">
+                            <img src="IMG/01.png" class="w-full object-cover">
+                            <img src="IMG/03.png" class="w-full object-cover">
+                            <img src="IMG/04.png" class="w-full object-cover">
+                            <img src="IMG/05.png" class="w-full object-cover">
+                        </div>
+                        <!-- Tombol Navigasi -->
+                        <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 prev-btn">❮</button>
+                        <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 next-btn">❯</button>
+                    </div>
+                    <h3 class="text-2xl mb-2 text-slate-600"> Website</h3>
+                    <p class="mb-2 text-gray-300">Pembuatan web kampus dengan fitur CRUD Siswa, Mata Kuliah, Dosen, Berita.</p>
+                    <p class="mb-2 text-gray-300">Teknologi: Tailwindcss, Docker, Laravel Sail.</p>
+                    <a href="https://github.com/ratihsttc/Kelompok-1/tree/feature/laravel" class="text-blue-500">Lihat di GitHub</a>
+                </div>
+        
+                <!-- Ulangi untuk proyek lainnya -->
+                <div class="bg-sky-500/10 p-5 rounded-lg shadow">
+                    <div class="relative w-full overflow-hidden rounded-lg shadow-lg mb-4">
+                        <div class="flex transition-transform duration-700 ease-in-out slider" data-index="0">
+                            <img src="IMG/05.png" class="w-full object-cover">
+                            <img src="IMG/06.png" class="w-full object-cover">
+                            <img src="IMG/07.png" class="w-full object-cover">
+                            <img src="IMG/02.png" class="w-full object-cover">
+                        </div>
+                        <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 prev-btn">❮</button>
+                        <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 next-btn">❯</button>
+                    </div>
+                    <h3 class="text-2xl  mb-2 text-slate-600">Website</h3>
+                    <p class="mb-2 text-gray-300">Pembuatan web kampus dengan fitur databases.</p>
+                    <p class="mb-2 text-gray-300">Teknologi: Tailwindcss, Docker, Laravel Sail.</p>
+                    <a href="https://github.com/ratihsttc/Kelompok-1/tree/feature/laravel" class="text-blue-500">Lihat di GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div id="about"class="container mx-auto px-4 mb-4">
+            <p class="text-sky-600 mt-2 mb-4">Tertarik bekerja sama? Jangan ragu untuk menghubungi saya!</p>
+            <h3 class="text-l font-semibold text-sky-500">Hubungi Saya</h3>
 
-    <!-- Testimoni (Testimonials) -->
-    <section id="testimonials" class="py-16 bg-gray-400 rounded-lg">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4 text-slate-300">Testimoni</h2>
-            <div class="space-y-4">
+            <a href="mailto:adomurtado1@gmail.com"
+                class="mt-4 inline-block bg-sky-500/50 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+                Kirim Email 📩
+            </a>
+        </div>
+        <div class="container mx-auto px-4 mb-10">
+            <p class="text-1xl  mb-4 text-slate-300">Better Call Ado</p>
+            <div class="space-y-4 mb-4">
                 <!-- Contoh Testimoni -->
-                <div class="bg-white p-4 rounded-lg shadow">
-                    <p class="mb-2">"Good, upgrade skill you again"</p>
-                    <p class="text-gray-600">- me name</p>
+                <div class="bg-transparent border-2 border-sky-500/80 p-6 rounded-lg shadow">
+                    <p class="mb-2 text-gray-300">"Good, upgrade skill you again"</p>
+                    <p class="mb-2 text-gray-300">"Code is like humor. When you have to explain it, it’s bad." – Cory House</p>
+                    <p class="text-gray-400">- me name</p>
+                    <p class="text-gray-400">- Nama : Ado Murtado</p>
+                    <p class="text-gray-400">- Addres : Tasikmalaya, Java island</p>
+                    <p class="text-gray-400">- Kampus : Sekolah Tinggi Teknologi Cipasung</p>
+                    <p class="text-gray-400">- Departmen : Informatika</p>
                 </div>
                 <!-- Tambahkan testimoni lainnya di sini -->
             </div>
         </div>
+        <div class="mt-6 flex justify-center space-x-4">
+            <a href="https://github.com/adomurtad" target="_blank" class="text-gray-700 hover:text-gray-900 text-2xl">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/username" target="_blank" class="text-blue-700 hover:text-blue-900 text-2xl">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/username" target="_blank" class="text-blue-400 hover:text-blue-600 text-2xl">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div> 
     </section>
+    <script>
+        document.querySelectorAll(".slider").forEach((slider, index) => {
+            let currentIndex = 0;
+            const images = slider.querySelectorAll("img");
+            const totalSlides = images.length;
 
-    <!-- Kontak (Contact) -->
-    <section id="contact" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4 text-slate-300">Contact</h2>
-            <form action="#" method="POST" class="space-y-4 ">
-                <div>
-                    <label for="name" class="block text-sm font-medium text-slate-300">Name</label>
-                    <input type="text" id="name" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
-                </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium text-slate-300">Email</label>
-                    <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
-                </div>
-                <div>
-                    <label for="message" class="block text-sm font-medium text-slate-300">Message</label>
-                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"></textarea>
-                </div>
-                <button type="submit" class="bg-blue-300 text-black py-2 px-4 rounded-md text-slate-30">submit</button>
-            </form>
-            <div class="mt-8">
-                <a href="https://linkedin.com/in/yourusername" class="text-blue-500 mr-4">LinkedIn</a>
-                <a href="https://github.com/adomurtad" class="text-blue-500">GitHub</a>
-            </div>
-        </div>
-    </section>
+            function showSlide(idx) {
+                if (idx >= totalSlides) currentIndex = 0;
+                else if (idx < 0) currentIndex = totalSlides - 1;
+                else currentIndex = idx;
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+            slider.parentElement.querySelector(".next-btn").addEventListener("click", () => showSlide(currentIndex + 1));
+            slider.parentElement.querySelector(".prev-btn").addEventListener("click", () => showSlide(currentIndex - 1));
+
+            setInterval(() => showSlide(currentIndex + 1), 3000);
+        });
+    </script>
 </body>
 </html>
