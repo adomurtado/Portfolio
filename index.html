@@ -1,89 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 </head>
 <style>
     html {
-    scroll-behavior: smooth;
-}
-
+        scroll-behavior: smooth;
+    }
 </style>
+
 <body class="bg-black text-white w-full h-64 bg-gradient-to-r from-slate-900/90 to-sky-900/10">
-    <header class="flex justify-between items-center p-6">
-        <div class="text-3xl font-bold">
-         <span class="text-white">
-            HIP
-         </span>
-         <span class="text-yellow-500">
-          HOP
-         </span>
-        </div>
-        <nav class="space-x-6 text-sm">
-         <a class="hover:text-yellow-500" href="#">
-          HOME
-         </a>
-         <a class="hover:text-yellow-500" href="#">
-          ABOUT
-         </a>
-         <!-- <a class="hover:text-yellow-500" href="#">
-          SERVICES
-         </a>
-         <a class="hover:text-yellow-500" href="#">
-          PORTFOLIO
-         </a> -->
-         <a class="hover:text-yellow-500" href="#">
-          TESTIMONIAL
-         </a>
-         <!-- <a class="hover:text-yellow-500" href="#">
-          CONTACT
-         </a> -->
-        </nav>
-    </header>
 
     <main class="flex flex-col md:flex-row items-center justify-center min-h-screen p-10">
-        <div class="text-center md:text-left md:w-1/2 space-y-6">
-            <h2 class="text-xl">Hello There!</h2>
-            <h1 class="text-5xl font-bold text-gray-300">
-                I'M
-                <span class="text-yellow-500"> A WEB DEVELOPER</span>
-            </h1>
-            <p class="text-gray-400">
-                Junior Laravel Developer passionate about building efficient and scalable web applications.
-            </p>
-            <div class="space-x-4">
-                <a class="inline-block bg-transparent border-2 border-gray-300 py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-white hover:text-black transition" href="#projects">
-                    <i class="fas fa-user"></i> ABOUT ME
-                </a>
-                <a class="inline-block bg-transparent border-2 border-gray-300 py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-white hover:text-black transition" href="adomurtado1@gmail.com">
-                    <i class="fas fa-envelope"></i> CONTACT ME
-                </a>
+        <div class="max-w-6xl w-full mx-auto">
+            <div class="bg-yellow-300 border-4 border-black rounded-xl shadow-lg p-6 md:flex items-center gap-6">
+                <!-- Text -->
+                <div class="md:w-1/2 mb-4 md:mb-0">
+                    <span class="bg-black text-yellow-300 px-3 py-1 text-lg uppercase font-bold tracking-wide">
+                        IN WEBSITE TROUBLE?
+                    </span>
+                    <h1 class="font-[Lobster] text-4xl md:text-5xl text-red-700 mt-3 mb-4">Better Call Ado!</h1>
+                    <ul class="space-y-1 font-semibold text-gray-900">
+                        <li>• BUILDING APPLICATIONS</li>
+                        <li>• FIXING LEGACY CODE</li>
+                        <li>• DEBUGGING NIGHTMARES</li>
+                        <li>• DATABASE RESTRUCTURING</li>
+                        <li>• CODE REVIEW DEFENSE</li>
+                        <li>• DEPLOYMENT EMERGENCIES</li>
+                    </ul>
+                    <a href="tel:+6281779262637"
+                        class="inline-block bg-red-600 text-yellow-300 mt-5 px-5 py-2 rounded-md text-lg font-bold shadow hover:bg-red-700 transition">
+                        Call Now: (+62) 8177-9262-637
+                    </a>
+                    <p class="mt-1 text-xs italic text-gray-700">* SE HABLA PHP & LARAVEL *</p>
+                </div>
+
+                <!-- Image -->
+                <div class="md:w-1/2 text-center">
+                    <div class="aspect-[4/3] w-full max-w-lg mx-auto">
+                        <img src="IMG/better-call-saul-calling-card-kh8aadwy9r8kno8f.jpg" alt="Better Call Saul"
+                            class="h-full w-full rounded-lg border-2 border-black shadow-md object-cover">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="md:w-1/2 mt-6 md:mt-0 flex justify-center">
-            <img alt="A thoughtful man in a grey sweater with a hand on his chin" class="brightness-50 rounded-full w-1/2 md:w-3/4 lg:w-1/2" src="IMG_20230101_180453_109.jpg" />
-        </div>
-        <a href="#projects">
-            <div class="absolute bottom-10 left-16 transform -translate-x-1/2 hover:text-blue-500 cursor-pointer">
-                <i class="fas fa-chevron-down text-2xl"></i>
-            </div>
-        </a>
     </main>
     <section id="projects" class="py-16 from-slate-900/90 to-sky-900/10 rounded-lg">
+
         <div class="container mx-auto px-4 text-gray-300">
             <h2 class="text-2xl font-bold mb-4 text-slate-300">Skill</h2>
             <div class="flex flex-wrap">
-                <span class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">Laravel</span>
-                <span class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">Docker</span>
-                <span class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">tailwindcss</span>
-                <span class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">SQL</span>
-                <span class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">Git</span>
+                <span
+                    class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">Laravel</span>
+                <span
+                    class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">Docker</span>
+                <span
+                    class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">tailwindcss</span>
+                <span
+                    class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">SQL</span>
+                <span
+                    class="inline-block bg-transparent border-2 border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition mr-3 mb-6">Git</span>
                 <!-- Tambahkan keahlian lainnya di sini -->
             </div>
         </div>
@@ -100,15 +83,18 @@
                             <img src="IMG/05.png" class="w-full object-cover">
                         </div>
                         <!-- Tombol Navigasi -->
-                        <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 prev-btn">❮</button>
-                        <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 next-btn">❯</button>
+                        <button
+                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 prev-btn">❮</button>
+                        <button
+                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 next-btn">❯</button>
                     </div>
                     <h3 class="text-2xl mb-2 text-slate-600"> Website</h3>
                     <!-- <p class="mb-2 text-gray-300">Pembuatan web kampus dengan fitur CRUD Siswa, Mata Kuliah, Dosen, Berita.</p>
                     <p class="mb-2 text-gray-300">Teknologi: Tailwindcss, Docker, Laravel Sail.</p> -->
-                    <a href="https://github.com/ratihsttc/Kelompok-1/tree/feature/laravel" class="text-blue-500">Lihat di GitHub</a>
+                    <a href="https://github.com/ratihsttc/Kelompok-1/tree/feature/laravel" class="text-blue-500">Lihat
+                        di GitHub</a>
                 </div>
-        
+
                 <!-- Ulangi untuk proyek lainnya -->
                 <div class="bg-sky-500/10 p-5 rounded-lg shadow">
                     <div class="relative w-full overflow-hidden rounded-lg shadow-lg mb-4">
@@ -118,63 +104,28 @@
                             <img src="IMG/07.png" class="w-full object-cover">
                             <img src="IMG/02.png" class="w-full object-cover">
                         </div>
-                        <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 prev-btn">❮</button>
-                        <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 next-btn">❯</button>
+                        <button
+                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 prev-btn">❮</button>
+                        <button
+                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 next-btn">❯</button>
                     </div>
                     <h3 class="text-2xl  mb-2 text-slate-600">Website</h3>
                     <!-- <p class="mb-2 text-gray-300">Pembuatan web kampus dengan fitur databases.</p>
                     <p class="mb-2 text-gray-300">Teknologi: Tailwindcss, Docker, Laravel Sail.</p> -->
-                    <a href="https://github.com/ratihsttc/Kelompok-1/tree/feature/laravel" class="text-blue-500">Lihat di GitHub</a>
+                    <a href="https://github.com/ratihsttc/Kelompok-1/tree/feature/laravel" class="text-blue-500">Lihat
+                        di GitHub</a>
                 </div>
+
             </div>
-        </div>
-        <div id="about" class="container mx-auto px-4 mb-4">
-          <p class="text-sky-600 mt-2 mb-4">Tertarik bekerja sama? Jangan ragu untuk menghubungi saya!</p>
-          <h3 class="text-l font-semibold text-sky-500 mb-4">Hubungi Saya</h3>
-        
-          <a href="mailto:adomurtado1@gmail.com"
-             class="mt-2 inline-block bg-sky-500/50 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-            Kirim Email 📩
-          </a>
-        
-          <!-- 🔥 Better Call Saul Card Start -->
-          <div class="mt-10 bg-yellow-300 border-4 border-black rounded-xl shadow-lg p-6 md:flex items-center gap-6">
-            <!-- Text -->
-            <div class="md:w-1/2 mb-4 md:mb-0">
-              <span class="bg-black text-yellow-300 px-3 py-1 text-lg uppercase font-bold tracking-wide">IN LEGAL TROUBLE?</span>
-              <h1 class="font-[Lobster] text-4xl md:text-5xl text-red-700 mt-3 mb-4">Better Call Ado!</h1>
-              <ul class="space-y-1 font-semibold text-gray-900">
-                <li>• TRAFFIC ACCIDENT</li>
-                <li>• DRUG DEALING</li>
-                <li>• SLIP & FALL</li>
-                <li>• PARKING TICKETS</li>
-                <li>• D.U.I.</li>
-                <li>• BOND FRAUD</li>
-              </ul>
-              <a href="tel:+15055034455"
-                 class="inline-block bg-red-600 text-yellow-300 mt-5 px-5 py-2 rounded-md text-lg font-bold shadow hover:bg-red-700 transition">
-                Call Now: (505) 503-4455
-              </a>
-              <p class="mt-3 text-sm italic text-gray-700">* NOT TOLL FREE | SE HABLA ESPAÑOL *</p>
-            </div>
-        
-            <!-- Image -->
-            <div class="md:w-1/2 text-center">
-              <img src="IMG/better-call-saul-calling-card-kh8aadwy9r8kno8f.jpg"
-                   alt="Better Call Saul"
-                   class="w-full rounded-lg border-2 border-black shadow-md">
-            </div>
-          </div>
-          <!-- 🔥 Better Call Saul Card End -->
         </div>
 
         <div class="container mx-auto px-4 mb-10">
-            <p class="text-1xl  mb-4 text-slate-300">Better Call Ado</p>
             <div class="space-y-4 mb-4">
                 <!-- Contoh Testimoni -->
                 <div class="bg-transparent border-2 border-sky-500/80 p-6 rounded-lg shadow">
                     <p class="mb-2 text-gray-300">"Good, upgrade skill you again"</p>
-                    <p class="mb-2 text-gray-300">"Code is like humor. When you have to explain it, it’s bad." – Cory House</p>
+                    <p class="mb-2 text-gray-300">"Code is like humor. When you have to explain it, it’s bad." – Cory
+                        House</p>
                     <p class="text-gray-400">- me name</p>
                     <p class="text-gray-400">- Nama : Ado Murtado</p>
                     <p class="text-gray-400">- Addres : Tasikmalaya, Java island</p>
@@ -188,16 +139,18 @@
             <a href="https://github.com/adomurtad" target="_blank" class="text-gray-700 hover:text-gray-900 text-2xl">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/ado-murtado-b01bb5207/" target="_blank" class="text-blue-700 hover:text-blue-900 text-2xl">
+            <a href="https://www.linkedin.com/in/ado-murtado-b01bb5207/" target="_blank"
+                class="text-blue-700 hover:text-blue-900 text-2xl">
                 <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://twitter.com/adomurtado" target="_blank" class="text-blue-400 hover:text-blue-600 text-2xl">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/do_3.6.9/" target="_blank" class="text-blue-400 hover:text-blue-600 text-2xl">
+            <a href="https://www.instagram.com/do_3.6.9/" target="_blank"
+                class="text-blue-400 hover:text-blue-600 text-2xl">
                 <i class="fab fa-instagram"></i>
             </a>
-        </div> 
+        </div>
     </section>
     <script>
         document.querySelectorAll(".slider").forEach((slider, index) => {
@@ -219,4 +172,5 @@
         });
     </script>
 </body>
+
 </html>
