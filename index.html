@@ -70,54 +70,48 @@
                 <!-- Tambahkan keahlian lainnya di sini -->
             </div>
         </div>
-        <div class="container mx-auto px-4 mb-10">
-            <p class="text-1xl  mb-4 text-slate-300">PROJECTS</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
-                <!-- Loop untuk Setiap Proyek -->
-                <div class="bg-sky-500/10 p-5 rounded-lg shadow">
-                    <div class="relative w-full overflow-hidden rounded-lg shadow-lg mb-4">
-                        <div class="flex transition-transform duration-700 ease-in-out slider" data-index="0">
-                            <img src="IMG/01.png" class="w-full object-cover">
-                            <img src="IMG/03.png" class="w-full object-cover">
-                            <img src="IMG/04.png" class="w-full object-cover">
-                            <img src="IMG/05.png" class="w-full object-cover">
-                        </div>
-                        <!-- Tombol Navigasi -->
-                        <button
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 prev-btn">❮</button>
-                        <button
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 next-btn">❯</button>
+        <!-- Judul Projects -->
+        <div class="container mx-auto px-4 mb-6">
+            <h2 class="text-3xl font-bold text-white mb-4">Projects</h2>
+        </div>
+
+        <!-- Kartu Projects -->
+        <div class="container mx-auto px-4 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Project Card -->
+                <div class="bg-white/10 hover:bg-white/20 transition rounded-xl p-5 shadow-lg">
+                    <div class="aspect-video mb-4 overflow-hidden rounded-lg">
+                        <img src="IMG/cd.jpeg" class="w-full h-full object-cover" />
                     </div>
-                    <h3 class="text-2xl mb-2 text-slate-600"> Website</h3>
-                    <!-- <p class="mb-2 text-gray-300">Pembuatan web kampus dengan fitur CRUD Siswa, Mata Kuliah, Dosen, Berita.</p>
-                    <p class="mb-2 text-gray-300">Teknologi: Tailwindcss, Docker, Laravel Sail.</p> -->
-                    <a href="https://github.com/ratihsttc/Kelompok-1/tree/feature/laravel" class="text-blue-500">Lihat
-                        di GitHub</a>
+                    <h3 class="text-xl font-semibold text-white/90 mb-1">Toko UMKM</h3>
+                    <p class="text-sm text-white/70 mb-2">user public : katalog produk, pesanan, testimoni</p>
+                    <p class="text-sm text-white/70 mb-2">user admin : upload produk, list pesanan</p>
+                    <p class="text-sm text-white/50 mb-4">Tailwind CDN, js, db supabase free cloud, netlify host domain
+                    </p>
+                    <a href="https://ceuenurkripik.netlify.app" class="text-blue-400 hover:no-underline text-sm">Lihat
+                        Toko</a>
                 </div>
 
-                <!-- Ulangi untuk proyek lainnya -->
-                <div class="bg-sky-500/10 p-5 rounded-lg shadow">
-                    <div class="relative w-full overflow-hidden rounded-lg shadow-lg mb-4">
-                        <div class="flex transition-transform duration-700 ease-in-out slider" data-index="0">
-                            <img src="IMG/05.png" class="w-full object-cover">
-                            <img src="IMG/06.png" class="w-full object-cover">
-                            <img src="IMG/07.png" class="w-full object-cover">
-                            <img src="IMG/02.png" class="w-full object-cover">
-                        </div>
-                        <button
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 prev-btn">❮</button>
-                        <button
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 next-btn">❯</button>
+                <!-- Copy-paste block di atas untuk setiap proyek lainnya -->
+                <div class="bg-white/10 hover:bg-white/20 transition rounded-xl p-5 shadow-lg">
+                    <div class="aspect-video mb-4 overflow-hidden rounded-lg">
+                        <img src="IMG/ls.png" class="w-full h-full object-cover" />
                     </div>
-                    <h3 class="text-2xl  mb-2 text-slate-600">Website</h3>
-                    <!-- <p class="mb-2 text-gray-300">Pembuatan web kampus dengan fitur databases.</p>
-                    <p class="mb-2 text-gray-300">Teknologi: Tailwindcss, Docker, Laravel Sail.</p> -->
-                    <a href="https://github.com/ratihsttc/Kelompok-1/tree/feature/laravel" class="text-blue-500">Lihat
-                        di GitHub</a>
+                    <h3 class="text-xl font-semibold text-white/90 mb-1">Math Engineering School</h3>
+                    <p class="text-sm text-white/70 mb-2">Sistem manajemen basis role auth.</p>
+                    <p class="text-sm text-white/70 mb-2">user student, teacher, admin</p>
+                    <p class="text-sm text-white/50 mb-4">Tailwind, vite, Laravel-sail, docker, not hosting, git acces
+                        private</p>
+                    <a href="https://github.com/adomurtado/sekolah-web"
+                        class="text-blue-400 hover:no-underline text-sm">Lihat di GitHub</a>
                 </div>
+
+                <!-- Tambahan kartu lainnya di sini (cp.png, mv.png...) -->
 
             </div>
         </div>
+
 
         <div class="container mx-auto px-4 mb-10">
             <div class="space-y-4 mb-4">
@@ -152,25 +146,6 @@
             </a>
         </div>
     </section>
-    <script>
-        document.querySelectorAll(".slider").forEach((slider, index) => {
-            let currentIndex = 0;
-            const images = slider.querySelectorAll("img");
-            const totalSlides = images.length;
-
-            function showSlide(idx) {
-                if (idx >= totalSlides) currentIndex = 0;
-                else if (idx < 0) currentIndex = totalSlides - 1;
-                else currentIndex = idx;
-                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
-
-            slider.parentElement.querySelector(".next-btn").addEventListener("click", () => showSlide(currentIndex + 1));
-            slider.parentElement.querySelector(".prev-btn").addEventListener("click", () => showSlide(currentIndex - 1));
-
-            setInterval(() => showSlide(currentIndex + 1), 3000);
-        });
-    </script>
 </body>
 
 </html>
